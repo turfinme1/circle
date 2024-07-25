@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+</head>
+
+<body style="height: 1vh;">
+    <canvas id="canvas" width="1000" height="1000"></canvas>
+    <script>
+        const canvas = document.querySelector("canvas");
+        const ctx = canvas.getContext("2d");
+
+        ctx.beginPath();
+        ctx.arc(250, 250, 200, 0, 2 * Math.PI);
+        ctx.arc(250, 250, 199, 0, 2 * Math.PI);
+        ctx.arc(250, 250, 198, 0, 2 * Math.PI);
+        ctx.stroke();
+    </script>
+</body>
+
+</html>
